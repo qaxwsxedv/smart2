@@ -1,0 +1,48 @@
+#frm{
+	display: block;
+	margin: 0px auto;
+	width: 50%;
+}
+
+label, input{
+	display: block;
+	float: left;
+}
+label{
+	width: 30%;
+	text-align: right;
+}
+input{
+	width: 50%;
+	text-align: left;
+	margin-left: 10px;
+}
+
+input[type="text"] {
+	background-color: lightcyan;
+}
+[type="password"] {
+	background-color: oldlace;
+}
+
+#bfr{
+	clear: left;
+	text-align: center;
+}
+
+div{
+	padding-top: 10px;
+}
+
+button{
+	width: 200px;
+	heigth: 30px;
+	fort-size: 16pt;
+}
+
+button[type="button"] {
+	background-color: green;
+}
+button[type="submit"] {
+	background-color: orange;
+}
