@@ -5,8 +5,9 @@
 }
 
 label, input{
-	display: block;
-	float: left;
+	/* display: block;
+	float: left; */
+	display: inline-block;
 }
 label{
 	width: 30%;
@@ -24,10 +25,13 @@ input[type="text"] {
 [type="password"] {
 	background-color: oldlace;
 }
-
+div{
+	margin-bottem: 30px;
+}
 #bfr{
-	clear: left;
+	/* clear: left; */
 	text-align: center;
+	margin-top: 30px;
 }
 
 div{

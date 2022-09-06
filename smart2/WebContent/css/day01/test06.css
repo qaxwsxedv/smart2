@@ -1,0 +1,37 @@
+.content{
+	width: 50%;
+	margin: 0px auto;
+}
+
+/*
+	클래스 이름이 d1 인 div 택를 선택하는 방법
+	==>
+		div.d1{}
+*/
+.d1{
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	border: 1px solod gray;
+	background-color: deeppink;
+	cursor: pointer;
+}
+
+/* 
+	div 태그중 
+	클래스가 d1 인 태그에 
+	마우스가 올려지는 태그들..
+*/
+div.d1:hover{
+	width: 500px;
+	background-color: dodgerblue;
+}
+
+input{
+	width: 500px;
+	height: 30px;
+}
+
+[name="id"]:focus{
+	background-color: springgreen;
+}
