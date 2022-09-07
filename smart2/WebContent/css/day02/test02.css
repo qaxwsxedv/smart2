@@ -1,0 +1,63 @@
+.content{
+	width: 600px;
+	margin: 0 auto;
+}
+.title{
+	background-color: #e91e63;
+	padding: 12px;
+	color: white;
+	text-align: center;
+}
+.fr{
+	margin-top: 20px;
+}
+label{
+	float: left;
+	width: 150px;
+	text-align: right;
+}
+#gfr, sfr{
+	float: left;
+	width: 420px;
+}
+#gfr > div {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+#sfr > div {
+	width: 200px;
+	float: left;
+	padding-left: 20px;
+}
+
+[type= "radio"]: checked {
+	width: 50px;
+	height: 50px;
+}
+.ft12{
+	font-size:12pt;
+}
+.ft14{
+	font-size:14pt;
+}
+.ft16{
+	font-size:16pt;
+}
+.bold{
+	font-weight: bold;
+}
+.selrt{
+	clear:left;
+	padding-top: 20px;
+}
+
+.hr1{
+	width: 100%;
+	height: 1px;
+	background-color: gray;
+}
+[type="checkbox"]:checked{
+	width: 30px;
+	height: 30px;
+}

@@ -1,0 +1,47 @@
+.frm{
+	display :block;
+	width: 650px;
+	margin: 0 auto;
+}
+.title{
+	background-color: #e91e63;
+	padding: 12px;
+	color: thite;
+	text-align: center;
+}
+
+#frm > div {
+	font-size: 0pt;
+}
+
+label{
+	display: inline-block;
+	width: 200px;
+	text-align: tight;
+	font-size: 16pt;
+	font-weight: bold;
+	color: gray;
+	margin-right: 20px;
+}
+input{
+	display: inline-block;
+	whidth: 300px;
+	font-size: 16pt;
+}
+
+button{
+	display: inline-block;
+	width: 30%;
+	height: 20px;
+}
+
+/* :disabled{ */
+input[disabled] {
+	background-color: red;
+	color: white;
+}
+input[readonly] {
+	background-color: dodgerblue;
+	color: white;
+	border: 0px solid red;
+}
