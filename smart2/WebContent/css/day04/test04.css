@@ -1,0 +1,64 @@
+.content{
+	width: 900px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0pt;
+}
+
+.col{
+	font-size: 16px;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin: 0px 0px 10px 10px;
+	border: 1px solid gray;
+}
+
+#g1{
+	background: radial-gradient(circle, red, yellow);
+}
+
+#g2{
+	background: radial-gradient(circle 60px, red, yellow);
+}
+
+#g3{
+	background: radial-gradient(circle 60px at 120px 80px, red, yellow);
+}
+
+#g4{
+	background: radial-gradient(circle 60px at 120px 80px, red, yellow 60%, green);
+}
+
+#g5{
+	background: radial-gradient(circle farthest-corner at 120px 80px, red, yellow);
+}
+
+#g6{
+	background: radial-gradient(circle farthest-side at 120px 80px, red, yellow);
+}
+
+#g7{
+	background: radial-gradient(circle closest-corner at 120px 80px, red, yellow);
+}
+
+#g8{
+	background: radial-gradient(circle closest-side at 120px 80px, red, yellow);
+}
+
+#g9{
+	background: radial-gradient(ellipse, red, yellow);
+}
+
+#g10{
+	background: radial-gradient(ellipse 100px 50px, red, yellow);
+}
+
+#g11{
+	background: radial-gradient(ellipse 100px 50px at 120px 80px, red, yellow);
+}
+
+#g12{
+	background: radial-gradient(ellipse closest-side at 120px 50px, red, yellow);
+}
+

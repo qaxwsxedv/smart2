@@ -1,0 +1,37 @@
+.content{
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0pt;
+}
+
+.col{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border: 1px solid gray;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	line-height: 200px;
+	font-size: 16px;
+}
+
+#g1{
+	background: linear-gradient(180deg, red, yellow);
+/* 	background: -webkit-linear-gradient(180deg, red, yellow); */
+}
+#g2{
+	background: linear-gradient(to right, red, yellow);
+}
+#g3{
+	background: linear-gradient(to right bottom, red, yellow);
+}
+#g4{
+	background: linear-gradient(90deg, red, yellow, green);
+}
+#g5{
+	background: linear-gradient(90deg, red, yellow 30%, green);
+}
+#g6{
+	background: linear-gradient(90deg, red 20%, yellow, green 80%);
+}

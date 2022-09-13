@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>visible tag</title>
+<link type="text/css" rel="stylesheet" href="../css/day04/test05.css">
+</head>
+<body>
+	<div class="content">
+		<div class="col"><p/></div>
+		<div class="col"><p/></div>
+		<div class="col" id="c1"><p/></div>
+		<div class="col" id="c"><p/></div>
+		<div class="col" id="c2"><p/></div>
+		<div class="col"><p/></div>
+	</div>
+<script type="text/javascript">
+	document.getElementById('c').onclick = function(){
+		alert('이벤트 발생~!');
+//		document.getElementById('c2').style.display = 'inline-block';
+
+		var pval = document.getElementById('c2').style.display;
+		alert(pval);
+		if(pval == 'none' || !pval){
+			document.getElementById('c2').style.display = 'inline-block';
+		} else {
+			document.getElementById('c2').style.display = 'none';
+		}
+	}
+/* 
+	연산자 ]
+		==> 연산에 사용되는 기호 
+		
+			산술 연산자 : +, -, *, /, %
+			대입 연산자 : =, +=, *=, /=, -=, %=
+			비교 연산자 : ==, !, !=, >, <, >=, <=
+							[자바스크립트 : ===, !==]
+			증감 연산자 : ++, --
+			논리 연산자 : and, or, &, |, &&, ||
+			
+			
+*/
+</script>
+</body>
+</html>

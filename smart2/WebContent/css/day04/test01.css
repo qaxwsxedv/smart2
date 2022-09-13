@@ -1,0 +1,11 @@
+h1{
+	text-align: center;
+}
+
+body{
+	background-image: url('../../img/jennie.jpg');
+	background-size: 300px auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+}
