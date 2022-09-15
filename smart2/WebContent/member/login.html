@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>W3.CSS</title>
+<link type="text/css" rel="stylesheet" href="../css/w3.css">
+<link type="text/css" rel="stylesheet" href="../css/smart.css">
+</head>
+<body>
+	<div class="w3-content mxw700">
+		<h1 class="w3-padding w3-pink w3-center w3-card-4 w3-round-large mgb20">Smart Login</h1>
+		
+		<form method="get" action="result.html" id="frm" name="frm" class="w3-col w3-round-large w3-card-4 mgb20 pdh30">
+			<div class="w3-col mgb15">
+				<div class="w3-col m3 w3-right-align w3-text-grey pdr10 ft18 bd">
+					<label for="id">I D : </label>
+				</div>
+				<div class="w3-col m9">
+					<input type="text" name="id" id="id" class="w3-col m10 w3-input w3-border" 
+																		placeholder="아이디를 입력하세요!" required>
+				</div>
+			</div>
+			<div class="w3-col mgb15">
+				<div class="w3-col m3 w3-right-align w3-text-grey pdr10 ft18 bd">
+					<label for="pw">P W : </label>
+				</div>
+				<div class="w3-col m9">
+					<input type="password" name="pw" id="pw" class="w3-col m10 w3-input w3-border" 
+																		placeholder="비밀번호를 입력하세요!" required>
+				</div>
+			</div>
+		</form>	
+		
+		<!-- 버튼 태그 -->
+		<div class="w3-col w3-round-large w3-card-4 hidden">
+			<div class="w3-col w3-third w3-green w3-hover-lime w3-button" id="hbtn">home</div>
+			<div class="w3-col w3-third w3-orange w3-hover-khaki w3-button" id="jbtn">join</div>
+			<div class="w3-col w3-third w3-blue w3-hover-aqua w3-button" id="lbtn">login</div>
+		</div>
+	</div>
+<script type="text/javascript">
+	
+	document.getElementById('lbtn').onclick = function(){
+		// 데이터 유효성검사
+		var sid = document.getElementById('id').value;
+		var spw = document.getElementById('pw').value;
+			/* 
+				자바스크립트에서는
+				변수를 조건식에 사용하게 되는경우
+				변수에 데이터가 채워져있는 경우는 true로 처리하고
+				비어있는 경우는 false로 처리하게 된다.
+			*/
+			
+			// 1번 방법
+			if(!sid){
+				// 이 블럭을 실행하는 경우는 아이디를 입력하지 않은 경우이므로
+				// 아이디를 입력하도록 유도한다.
+				document.getElementById('id').focus();
+				return;
+			}
+			if(!spw){
+				document.getElementById('pw').focus();
+				return;
+			}
+			
+		/*
+		// 2번 방법
+		if(!sid || !spw){
+			// !sid ==> 아이디값을 읽었는데 읽은 데이터가 없는 경우 (비밀번호도 마찬가지...)
+			
+			//이 경우는 비어있는 태그가 존재한다는 것이므로 다시 입력하도록 유도한다.
+			//따라서 즉시 실행중인 이 함수를 종료시킨다.
+			return;
+		} 
+		*/
+		
+		document.getElementById('frm').submit();
+	}
+	
+/* 
+	자바스크립트에서 합수 작성 형식
+		1.
+			function 함수이름([매개변수리스트]){
+				실행내용...
+			}
+			
+		2. 무명함수
+			function([매개변수리스트]){
+			
+			}
+		==>
+			var 변수이름 = function([매개변수리스트]){
+				실행내용...
+			};
+			==>
+				function 변수이름([매개변수리스트]){
+					실행내용
+				}
+				과 똑같은 의미
+
+*/
+</script>
+</body>
+</html>

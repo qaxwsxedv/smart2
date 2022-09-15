@@ -1,3 +1,7 @@
+/* 디스플레이 관련 클래스 */
+.inblock{
+	display: inline-block;
+}
 .mxw600 {
 	max-width: 600px;
 }
@@ -24,6 +28,9 @@
 	margin-bottom: 20px;
 }
 
+.glbl{
+	margin-left: 10px;
+}
 /* 패딩 관련 클래스 */
 .pdl10 {
 	padding-left: 10px;
@@ -43,6 +50,9 @@
 }
 
 /* 폰트 관련 클래스 */
+.ft12 {
+	font-size: 12pt;
+}
 .ft16 {
 	font-size: 16pt;
 }
@@ -53,4 +63,27 @@
 
 .bd {
 	font-weight: bold;
+}
+
+/* 버튼 사이즈 클래스 */
+.w80{
+	width: 80px;
+}
+
+/* 아바타 관련 사이즈 */
+.avtimg{
+	width: 100px;
+	height: 100px;
+}
+.avtfr{
+	width: 100px;
+	height: 130px;
+}
+
+.h9{
+	height: 9px;
+}
+
+.h30{
+	height: 29px;
 }

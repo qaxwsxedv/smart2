@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Smart Join Page</title>
+<link type="text/css" rel="stylesheet" href="../css/w3.css">
+<link type="text/css" rel="stylesheet" href="../css/smart.css">
+</head>
+<body>
+	<div class="w3-content mxw700">
+		<h1 class="w3-padding w3-pink w3-center w3-card-4 w3-round-large mgb20">Smart join</h1>
+		
+		<form method="get" action="result.html" id="frm" name="frm" class="w3-col w3-round-large w3-card-4 mgb20 pdh30">
+			<div class="w3-col mgb15">
+				<div class="w3-col m3 w3-right-align w3-text-grey pdr10 ft18">
+					<label for="name">이 름 : </label>
+				</div>
+				<div class="w3-col m9">
+					<input type="text" name="name" id="name" class="w3-col m10 w3-input w3-border" 
+																		placeholder="이름을 입력하세요!" required>
+				</div>
+			</div>
+			<div class="w3-col mgb15">
+				<div class="w3-col m3 w3-right-align w3-text-grey pdr10 ft18">
+					<label for="name">I D : </label>
+				</div>
+				<div class="w3-col m9">
+					<div class="w3-col m10">
+						<div class="w80 w3-right w3-button w3-blue w3-hover-aqua">check</div>
+						<div class="w3-rest pdr10">
+							<input type="text" name="id" id="id" class="w3-col w3-input w3-border" 
+																placeholder="아이디를 입력하세요!" required>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w3-col mgb15">
+				<div class="w3-col m3 w3-right-align w3-text-grey pdr10 ft18">
+					<label for="pw">P W : </label>
+				</div>
+				<div class="w3-col m9">
+					<input type="password" name="pw" id="pw" class="w3-col m10 w3-input w3-border" 
+																		placeholder="비밀번호를 입력하세요!" required>
+				</div>
+			</div>
+			<div class="w3-col mgb15">
+				<div class="w3-col m3 w3-right-align w3-text-grey pdr10 ft18">
+					<label for="pw">reP W : </label>
+				</div>
+				<div class="w3-col m9">
+					<input type="password" name="repw" id="repw" class="w3-col m10 w3-input w3-border" 
+																		placeholder="비밀번호를 입력하세요!" required>
+				</div>
+			</div>
+			<div class="w3-col mgb15">
+				<div class="w3-col m3 w3-right-align w3-text-grey pdr10 ft18">
+					<label for="pw">mail : </label>
+				</div>
+				<div class="w3-col m9">
+					<input type="text" name="mail" id="mail" class="w3-col m10 w3-input w3-border" 
+																		placeholder="이메일을 입력하세요!" required>
+				</div>
+			</div>
+			<div class="w3-col mgb15">
+				<div class="w3-col m3 w3-right-align w3-text-grey pdr10 ft18">
+					<label for="pw">phone : </label>
+				</div>
+				<div class="w3-col m9">
+					<input type="text" name="phone" id="phone" class="w3-col m10 w3-input w3-border" 
+																		placeholder="전화번호를 입력하세요!" required>
+				</div>
+			</div>
+			<div class="w3-col mgb15">
+				<div class="w3-col m3 w3-right-align w3-text-grey pdr10 ft18">
+					<label for="pw">gender : </label>
+				</div>
+				<div class="w3-col m9">
+					<div class="w3-col m10">
+						<div class="w3-half w3-center"><!-- w3-half ==> w3-col s6 m6 l6 -->
+							<input type="radio" name="gen" id="mgen" class="w3-radio" value="M" onchange="getGen(this)">
+							<label for="mgen" class="glbl ft12">남 자</label>
+						</div>
+						<div class="w3-half w3-center">
+							<input type="radio" name="gen" id="fgen" class="w3-radio" value="F" onclick="getGen(this)">
+							<label for="fgen" class="glbl ft12">여 자</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w3-col" id="selAvt" style="display: none;">
+				<div class="w3-col m3 w3-right-align w3-text-grey pdr10 ft18">
+					<label>avatar : </label>
+				</div>
+				<div class="w3-col m9">
+					<div class="w3-col m10 w3-center">
+						<!-- 남자아바타 선택 그룹 -->
+						<div class="w3-col" id="mavt">
+							<div class="inblock">
+								<div class="avtfr inblock">
+									<label for="a1" class="w3-col avtimg w3-border">
+										<img src="../img/avatar/img_avatar1.png" class="avtimg">
+									</label>
+									<div class="w3-col">
+										<input type="radio" name="avt" id="a1" value="1">
+									</div>
+								</div>
+								<div class="avtfr inblock">
+									<label for="a2" class="w3-col avtimg w3-border">
+										<img src="../img/avatar/img_avatar2.png" class="avtimg">
+									</label>
+									<div class="w3-col">
+										<input type="radio" name="avt" id="a1" value="2">
+									</div>
+								</div>
+								<div class="avtfr inblock">
+									<label for="a3" class="w3-col avtimg w3-border">
+										<img src="../img/avatar/img_avatar3.png" class="avtimg">
+									</label>
+									<div class="w3-col">
+										<input type="radio" name="avt" id="a1" value="3">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 여자아바타 선택 그룹 -->
+						<div class="w3-col" id="favt">
+							<div class="inblock">
+								<div class="avtfr inblock">
+									<label for="a1" class="w3-col avtimg w3-border">
+										<img src="../img/avatar/img_avatar4.png" class="avtimg">
+									</label>
+									<div class="w3-col">
+										<input type="radio" name="avt" id="a1" value="1">
+									</div>
+								</div>
+								<div class="avtfr inblock">
+									<label for="a2" class="w3-col avtimg w3-border">
+										<img src="../img/avatar/img_avatar5.png" class="avtimg">
+									</label>
+									<div class="w3-col">
+										<input type="radio" name="avt" id="a1" value="2">
+									</div>
+								</div>
+								<div class="avtfr inblock">
+									<label for="a3" class="w3-col avtimg w3-border">
+										<img src="../img/avatar/img_avatar6.png" class="avtimg">
+									</label>
+									<div class="w3-col">
+										<input type="radio" name="avt" id="a1" value="3">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>	
+		
+		<!-- 버튼 태그 -->
+		<div class="w3-col w3-round-large w3-card-4 hidden">
+			<div class="w3-col w3-third w3-green w3-hover-lime w3-button" id="hbtn">home</div>
+			<div class="w3-col w3-third w3-orange w3-hover-khaki w3-button" id="jbtn">join</div>
+			<div class="w3-col w3-third w3-blue w3-hover-aqua w3-button" id="lbtn">login</div>
+		</div>
+	</div>
+<script type="text/javascript">
+	function getGen(el){
+		var gval = el.value;
+		/* gval = M or F*/
+		if(gval == 'M'){
+			document.getElementById('favt').style.display = 'none';
+			document.getElementById('mavt').style.display = 'block';
+			document.getElementById('selAvt').style.display = 'block';
+		} else if(gval == 'F'){
+			document.getElementById('favt').style.display = 'block';
+			document.getElementById('mavt').style.display = 'none';
+			document.getElementById('selAvt').style.display = 'block';
+		}
+	}
+	
+	
+</script>
+</body>
+</html>
